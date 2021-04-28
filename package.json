@@ -1,0 +1,32 @@
+{
+  "name": "@schoenwald/generator-component-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yeoman-generator": "^4.13.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "@schoenwald/eslint-config-typescript": "^5.0.0",
+    "@types/yeoman-generator": "^4.11.3",
+    "@types/yosay": "0.0.29",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  }
+}

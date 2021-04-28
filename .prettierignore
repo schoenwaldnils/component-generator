@@ -1,0 +1,5 @@
+build/
+__temp__/
+out/
+node_modules/
+templates
