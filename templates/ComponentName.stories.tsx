@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
-import { <%= ComponentName %> } from './<%= ComponentName %>'
+import { <%= ComponentName %> as <%= ComponentName %>Component } from './<%= ComponentName %>'
 
 export default {
   title: '<%= ComponentName %>',
-  component: <%= ComponentName %>,
+  component: <%= ComponentName %>Component,
 }
 
-export const Default: FC = () => (
-  <<%= ComponentName %> />
+export const <%= ComponentName %>: FC = () => (
+  <<%= ComponentName %>Component />
 )
