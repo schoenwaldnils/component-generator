@@ -15,7 +15,8 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "generators"
+    "generators",
+    "templates"
   ],
   "dependencies": {
     "chalk": "^4.1.0",
