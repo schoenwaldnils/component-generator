@@ -1,6 +1,6 @@
 {
   "name": "@schoenwald/generator-component-generator",
-  "version": "1.0.1-3",
+  "version": "1.1.0",
   "description": "",
   "main": "generators/app/index.js",
   "scripts": {
