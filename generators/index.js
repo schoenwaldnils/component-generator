@@ -19,7 +19,7 @@ class default_1 extends yeoman_generator_1.default {
             store: true,
         }).then((answers) => {
             this.ComponentName = answers.ComponentName;
-            this.component_name = lodash_snakecase_1.default(answers.ComponentName);
+            this.component_name = (0, lodash_snakecase_1.default)(answers.ComponentName);
         });
     }
     writing() {

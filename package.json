@@ -19,18 +19,18 @@
     "templates"
   ],
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^5.0.1",
     "lodash.snakecase": "^4.1.1",
-    "yeoman-generator": "^4.13.0",
+    "yeoman-generator": "^5.7.0",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "@schoenwald/eslint-config-typescript": "^5.0.0",
+    "@schoenwald/eslint-config-typescript": "^5.0.1",
     "@types/lodash.snakecase": "^4.1.7",
-    "@types/yeoman-generator": "^4.11.3",
-    "@types/yosay": "0.0.29",
-    "eslint": "^7.20.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "@types/yeoman-generator": "^5.2.10",
+    "@types/yosay": "^2.0.1",
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   }
 }
