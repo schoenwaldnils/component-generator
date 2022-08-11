@@ -1,6 +1,6 @@
-import * as chalk from 'chalk'
-import * as snakeCase from 'lodash.snakecase'
-import * as Generator from 'yeoman-generator'
+import chalk from 'chalk'
+import snakeCase from 'lodash.snakecase'
+import Generator from 'yeoman-generator'
 
 export default class extends Generator {
   ComponentName: ''
