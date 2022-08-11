@@ -1,8 +1,10 @@
 import * as chalk from 'chalk'
+import snakeCase from 'lodash.snakecase'
 import * as Generator from 'yeoman-generator'
 
 export default class extends Generator {
   ComponentName: ''
+  component_name: ''
 
   constructor(args: any, options: any) {
     super(args, options)
@@ -17,6 +19,7 @@ export default class extends Generator {
       store: true,
     }).then((answers) => {
       this.ComponentName = answers.ComponentName
+      this.component_name = snakeCase(answers.ComponentName) as any
     })
   }
 
@@ -34,6 +37,7 @@ export default class extends Generator {
         ),
         {
           ComponentName: this.ComponentName,
+          component_name: this.component_name,
         },
       )
     })

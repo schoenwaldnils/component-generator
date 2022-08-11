@@ -1,9 +1,7 @@
-import { FC } from 'react'
+export interface <%= ComponentName %>Props {
+  someProp: unknown
+}
 
-export const <%= ComponentName %>: FC = () => {
-  return (
-    <div>
-      Component: <%= ComponentName %>
-    </div>
-  )
+export const <%= ComponentName %> = ({ someProp }: <%= ComponentName %>Props) => {
+  return <div>Component: <%= ComponentName %></div>
 }
