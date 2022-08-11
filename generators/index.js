@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chalk = require("chalk");
+const lodash_snakecase_1 = require("lodash.snakecase");
 const Generator = require("yeoman-generator");
 class default_1 extends Generator {
     constructor(args, options) {
@@ -15,6 +16,7 @@ class default_1 extends Generator {
             store: true,
         }).then((answers) => {
             this.ComponentName = answers.ComponentName;
+            this.component_name = lodash_snakecase_1.default(answers.ComponentName);
         });
     }
     writing() {
@@ -22,6 +24,7 @@ class default_1 extends Generator {
         files.map((fileName) => {
             this.fs.copyTpl(this.templatePath(`../../templates/${fileName}`), this.destinationPath(`${this.ComponentName}/${fileName.replace('ComponentName', this.ComponentName)}`), {
                 ComponentName: this.ComponentName,
+                component_name: this.component_name,
             });
         });
     }

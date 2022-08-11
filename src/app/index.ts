@@ -1,5 +1,5 @@
 import * as chalk from 'chalk'
-import snakeCase from 'lodash.snakecase'
+import * as snakeCase from 'lodash.snakecase'
 import * as Generator from 'yeoman-generator'
 
 export default class extends Generator {
