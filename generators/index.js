@@ -1,12 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const chalk = require("chalk");
-const snakeCase = require("lodash.snakecase");
-const Generator = require("yeoman-generator");
-class default_1 extends Generator {
+const chalk_1 = __importDefault(require("chalk"));
+const lodash_snakecase_1 = __importDefault(require("lodash.snakecase"));
+const yeoman_generator_1 = __importDefault(require("yeoman-generator"));
+class default_1 extends yeoman_generator_1.default {
     constructor(args, options) {
         super(args, options);
-        this.log(`Welcome to the ${chalk.red('Component')} generator!`);
+        this.log(`Welcome to the ${chalk_1.default.red('Component')} generator!`);
     }
     prompting() {
         return this.prompt({
@@ -16,7 +19,7 @@ class default_1 extends Generator {
             store: true,
         }).then((answers) => {
             this.ComponentName = answers.ComponentName;
-            this.component_name = snakeCase(answers.ComponentName);
+            this.component_name = lodash_snakecase_1.default(answers.ComponentName);
         });
     }
     writing() {

@@ -3,5 +3,7 @@ export interface <%= ComponentName %>Props {
 }
 
 export const <%= ComponentName %> = ({ someProp }: <%= ComponentName %>Props) => {
+  console.log({ someProp })
+
   return <div>Component: <%= ComponentName %></div>
 }
