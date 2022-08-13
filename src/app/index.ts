@@ -6,7 +6,7 @@ export default class extends Generator {
   ComponentName: ''
   component_name: ''
 
-  constructor(args: any, options: any) {
+  constructor(args: string | string[], options: Generator.GeneratorOptions) {
     super(args, options)
     this.log(`Welcome to the ${chalk.red('Component')} generator!`)
   }
